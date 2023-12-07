@@ -271,7 +271,7 @@ a{
 }
 
 
-@media(max-width: 770px) {
+@media(max-width: 1000px) {
     .sidebar{
         display: none;
     }
