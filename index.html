@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css"
+        integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Dashboard clone</title>
+</head>
+
+<body>
+    <main class="d-flex">
+        <div class="sidebar card p-4">
+            <div class="topbar">
+                <img src="images/clever-primary.svg" alt="">
+            </div>
+            <div class="sidebar-navigation mt-4">
+                <ul>
+                    <li><a href="#" class="d-flex"><i class="bi bi-briefcase"></i><span>Projects</span></a></li>
+                    <li><a href="#" class="d-flex"><i class="bi bi-kanban"></i><span>Tasks</span></a></li>
+                    <li><a href="#" class="d-flex"><i class="bi bi-file-earmark-text"></i><span>Files</span></a></li>
+                    <li><a href="#" class="d-flex"><i class="bi bi-terminal"></i><span>Integrations</span></a></li>
+                    <li><a href="#" class="d-flex"><i class="bi bi-people"></i><span>User</span></a></li>
+                    <li><a href="#" class="d-flex"><i class="bi bi-gear"></i><span>Settings</span></a></li>
+                    <li><a href="#" class="d-flex"><i
+                                class="bi bi-person-bounding-box"></i><span>Authentication</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content flex-1">
+            <div class="container mt-5">
+                <div class="content-header">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-9">
+                            <div>
+                                <h2><span>👋</span>Hi, Diran!</h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 col-md-3">
+                            <div class="d-flex align-items-center gap-4 justify-content-end">
+                                <button class="btn"><i class="bi bi-people"></i>Share</button>
+                                <button class="btn btn-secondary"><i class="bi bi-plus-square"></i>Create</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-1 my-5">
+                    <div class="row g-5">
+                        <div class="col-md-8">
+                            <div class="inner">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <h5>Orders</h5>
+                                        <button class="btn border-x">Export</button>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="chartContainer" style="height: 317px; width: 100%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="inner">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between align-items-center py-2">
+                                        <h5>Top peformance</h5>
+                                        <button class="btn border-x">See all</button>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="users">
+                                            <div class="user d-flex align-items-center justify-content-between border p-3 rounded-3 mb-4">
+                                                <div class="user-left d-flex">
+                                                    <div class="avatar">
+                                                        <img src="images/img-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="user-info ml-4">
+                                                        <p>
+                                                            Norman Mohrbacher</p>
+                                                        <span class="text-muted">Ul Designer</span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-right">
+                                                    <span><i class="bi bi-three-dots-vertical"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="user d-flex align-items-center justify-content-between border p-3 rounded-3 mb-4">
+                                                <div class="user-left d-flex">
+                                                    <div class="avatar">
+                                                        <img src="images/img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="user-info ml-4">
+                                                        <p>Choolwe Sosala</p>
+                                                        <span class="text-muted">Web Developer</span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-right">
+                                                    <span><i class="bi bi-three-dots-vertical"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="user d-flex align-items-center justify-content-between border p-3 rounded-3 mb-4">
+                                                <div class="user-left d-flex">
+                                                    <div class="avatar">
+                                                        <img src="images/img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="user-info ml-4">
+                                                        <p>Jane Smith</p>
+                                                        <span class="text-muted">Marketing Director</span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-right">
+                                                    <span><i class="bi bi-three-dots-vertical"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-stats">
+                    <div class="row gy-4">
+                        <div class="col-md-3">
+                            <div class="stat card d-flex justify-content-between align-items-center flex-row">
+                                <div class="stat-left">
+                                    <p class="text-muted mb-3">Budget</p>
+                                    <h4>$750.90</h4>
+                                    <div class="d-flex gap-4">
+                                        <span class="text-success"><i class="bi bi-arrow-up"></i>30%</span>
+                                        <span class="small">Since last month</span>
+                                    </div>
+                                </div>
+                                <div class="stat-right">
+                                    <span class="icon"><i class="bi bi-credit-card"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat card d-flex justify-content-between align-items-center flex-row">
+                                <div class="stat-left">
+                                    <p class="text-muted mb-3">New projects</p>
+                                    <h4>123</h4>
+                                    <div class="d-flex gap-4">
+                                        <span class="text-success"><i class="bi bi-arrow-up"></i>30%</span>
+                                        <span class="small">Since last month</span>
+                                    </div>
+                                </div>
+                                <div class="stat-right">
+                                    <span class="icon bg-primary"><i class="bi bi-people"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat card d-flex justify-content-between align-items-center flex-row">
+                                <div class="stat-left">
+                                    <p class="text-muted mb-3">Total hours</p>
+                                    <h4>1.400</h4>
+                                    <div class="d-flex gap-4">
+                                        <span class="text-danger"><i class="bi bi-arrow-up"></i>30%</span>
+                                        <span class="small">Since last month</span>
+                                    </div>
+                                </div>
+                                <div class="stat-right">
+                                    <span class="icon bg-info"><i class="bi bi-clock-history"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat card d-flex justify-content-between align-items-center flex-row">
+                                <div class="stat-left">
+                                    <p class="text-muted mb-3">Work load</p>
+                                    <h4>95%</h4>
+                                    <div class="d-flex gap-4">
+                                        <span class="text-success"><i class="bi bi-arrow-up"></i>30%</span>
+                                        <span class="small">Since last month</span>
+                                    </div>
+                                </div>
+                                <div class="stat-right">
+                                    <span class="icon bg-danger"><i class="bi bi-minecart-loaded"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects mt-5">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Latest projects</h5>
+                        </div>
+                        <div class="card-body table-responsive">
+                            <table class="table table-hover table-light">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><span>NAME</span></th>
+                                        <th scope="col"><span>DUE DATE</span></th>
+                                        <th scope="col"><span>STATUS</span></th>
+                                        <th scope="col"><span>TEAM</span></th>
+                                        <th scope="col"><span>COMPLETION</span></th>
+                                        <th scope="col"><span></span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="images/airbnb.svg" alt=""><span>Website Redesign</span></td>
+                                        <td><span>22-10-2022</span></td>
+                                        <td><span class="dot bg-primary"></span><span>in progress</span></td>
+                                        <td>
+                                            <div>
+                                                <img src="images/img-1.jpg" alt="">
+                                                <img src="images/img-3.jpg" alt="">
+                                                <img src="images/img-4.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span>67%</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width: 67%"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn">View</button>
+                                            <button class="btn"><i class="bi bi-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/amazon.svg" alt=""><span>E-commerce App</span></td>
+                                        <td><span>22-10-2022</span></td>
+                                        <td><span class="dot bg-warning"></span><span>in progress</span></td>
+                                        <td>
+                                            <div>
+                                                <img src="images/img-1.jpg" alt="">
+                                                <img src="images/img-3.jpg" alt="">
+                                                <img src="images/img-4.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span>44%</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" style="width: 44%"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn">View</button>
+                                            <button class="btn"><i class="bi bi-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/bootstrap.svg" alt=""><span>Learning platform</span></td>
+                                        <td><span>22-10-2022</span></td>
+                                        <td><span class="dot bg-danger"></span><span>in progress</span></td>
+                                        <td>
+                                            <div>
+                                                <img src="images/img-1.jpg" alt="">
+                                                <img src="images/img-3.jpg" alt="">
+                                                <img src="images/img-4.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span>20%</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-danger" style="width: 20%"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn">View</button>
+                                            <button class="btn"><i class="bi bi-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/dribbble.svg" alt=""><span>Design Portfolio</span></td>
+                                        <td><span>22-10-2022</span></td>
+                                        <td><span class="dot"></span><span>in progress</span></td>
+                                        <td>
+                                            <div>
+                                                <img src="images/img-1.jpg" alt="">
+                                                <img src="images/img-3.jpg" alt="">
+                                                <img src="images/img-4.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span>38%</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-danger" style="width: 38%"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn">View</button>
+                                            <button class="btn"><i class="bi bi-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/spotify.svg" alt=""><span>Our team's playlist</span></td>
+                                        <td><span>22-10-2022</span></td>
+                                        <td><span class="dot bg-success"></span><span>in progress</span></td>
+                                        <td>
+                                            <div>
+                                                <img src="images/img-1.jpg" alt="">
+                                                <img src="images/img-3.jpg" alt="">
+                                                <img src="images/img-4.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span>88%</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" style="width: 88%"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn">View</button>
+                                            <button class="btn"><i class="bi bi-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-section mt-5">
+                    <div class="row gy-4">
+                        <div class="col-md-7">
+                            <div class="card activity-1">
+                                <div class="card-header py-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h5>Notification</h5>
+                                        <div class="control-buttons d-flex gap-3">
+                                            <span><i class="bi bi-x-diamond"></i></span>
+                                            <span class="bg-danger"><i class="bi bi-trash"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="activity-links mt-3">
+                                        <a href="#">Latest</a>
+                                        <a href="#">Projects</a>
+                                        <a href="#">Files</a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="activities">
+                                        <li class="d-flex justify-content-between">
+                                            <div class="activity-left d-flex align-items-center">
+                                                <img src="images/img-1.jpg" alt="">
+                                                <div>
+                                                    <p class="text-muted"><span>Robert</span> started following you</p>
+                                                    <div class="online">
+                                                        <span class="online-sign"></span>
+                                                        <span>Online</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-right">
+                                                <span class="small text-muted">3 min ago</span>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <div class="activity-left d-flex align-items-center">
+                                                <img src="images/img-3.jpg" alt="">
+                                                <div>
+                                                    <p class="text-muted">Share updates about <span>Webpixels by creating a new post</span></p>
+                                                    <div class="online">
+                                                        <span class="online-sign bg-danger"></span>
+                                                        <span>Offline</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-right">
+                                                <span class="small text-muted">8 min ago</span>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <div class="activity-left d-flex align-items-center">
+                                                <img src="images/img-4.jpg" alt="">
+                                                <div>
+                                                    <p class="text-muted"><span>Mya</span> was assigned to project <span>Website Redesign</span></p>
+                                                    <div class="online">
+                                                        <span class="online-sign bg-warning"></span>
+                                                        <span>Away</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-right">
+                                                <span class="small text-muted">1 hour ago</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-light d-flex align-items-center justify-content-between">
+                                    <div class="left">
+                                        <p>23 Notifications</p>
+                                    </div>
+                                    <div class="right">
+                                        <button class="btn">Clear all</button>
+                                        <button class="btn">See all activity</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card activity-2">
+                                <div class="card-header">
+                                    <h5>Community Boards</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="following">
+                                        <img src="images/img-4.jpg" alt="">
+                                        <img src="images/img-1.jpg" alt="">
+                                        <img src="images/img-1.jpg" alt="">
+                                        <img src="images/img-3.jpg" alt="">
+                                        <img src="images/img-4.jpg" alt="">
+                                        <img src="images/img-1.jpg" alt="">
+                                        <img src="images/img-3.jpg" alt="">
+                                        <img src="images/img-4.jpg" alt="">
+                                        <img src="images/img-1.jpg" alt="">
+                                    </div>
+                                    <div class="suggestion-header d-flex align-items-center justify-content-between my-3">
+                                        <h5>Suggestions</h5>
+                                        <a href="#">See all</a>
+                                    </div>
+                                    <ul>
+                                       <li class="d-flex align-items-center justify-content-between py-2">
+                                        <div class="follow-left d-flex align-items-center gap-3">
+                                            <img src="images/dribbble.svg" alt="">
+                                            <p>Dribbble Community</p>
+                                        </div>
+                                        <div class="follow-right">
+                                            <button class="btn border-x"><i class="bi bi-people"></i> Follow</button>
+                                        </div>
+                                       </li> 
+                                       <li class="d-flex align-items-center justify-content-between py-2">
+                                        <div class="follow-left d-flex align-items-center gap-3">
+                                            <img src="images/spotify.svg" alt="">
+                                            <p>Spotify Music</p>
+                                        </div>
+                                        <div class="follow-right">
+                                            <button class="btn border-x"><i class="bi bi-people"></i> Follow</button>
+                                        </div>
+                                       </li> 
+                                       <li class="d-flex align-items-center justify-content-between py-2">
+                                        <div class="follow-left d-flex align-items-center gap-3">
+                                            <img src="images/amazon.svg" alt="">
+                                            <p>Amazon Store</p>
+                                        </div>
+                                        <div class="follow-right">
+                                            <button class="btn border-x"><i class="bi bi-people"></i> Follow</button>
+                                        </div>
+                                       </li> 
+                                       <li class="d-flex align-items-center justify-content-between py-2">
+                                        <div class="follow-left d-flex align-items-center gap-3">
+                                            <img src="images/bootstrap.svg" alt="">
+                                            <p>Css Framework</p>
+                                        </div>
+                                        <div class="follow-right">
+                                            <button class="btn border-x"><i class="bi bi-people"></i> Follow</button>
+                                        </div>
+                                       </li> 
+                                       <li class="d-flex align-items-center justify-content-between py-2">
+                                        <div class="follow-left d-flex align-items-center gap-3">
+                                            <img src="images/airbnb.svg" alt="">
+                                            <p>Website Redesign</p>
+                                        </div>
+                                        <div class="follow-right">
+                                            <button class="btn border-x"><i class="bi bi-people"></i> Follow</button>
+                                        </div>
+                                       </li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

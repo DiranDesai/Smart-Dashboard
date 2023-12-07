@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/graphik');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Nunito+Sans:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Nunito+Sans:wght@500&family=Ysabeau+Office:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Manrope:wght@200;300;400;500;600;700&family=Nunito+Sans:wght@500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+
+
+
+body{
+    /* background-color: #f5f9fc; */
+    /* font-family: "Inter"; */
+    
+    height: 2000px;
+    overflow-x: hidden;
+}
+
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+.card{
+    border: 1px solid #e7eaf0 !important;
+    box-shadow: 0 .275rem .75rem -0.0625rem rgba(11,15,25,.06),0 .125rem .4rem -0.0625rem rgba(11,15,25,.03) !important;
+}
+
+.border-x{
+    border: 1px solid #ccc;
+}
+
+.content{
+    width: 100%;
+}
+.content .content-header button{
+    border: none;
+    padding: 6px 20px;
+    font-weight: 500;
+}
+.content .content-header button i{
+    margin-right: 7px;
+}
+.content .content-header button:first-child{
+    background-color: white;
+    border: 1px solid #e7eaf0;
+}
+
+.content .content-header button:last-child{
+    background-color: #5c60f5;
+}
+
+.sidebar{
+    overflow-y: scroll;
+    width: 270px;
+}
+.sidebar a{
+    color: #16192c;
+}
+.sidebar li{
+    padding: 15px 0;
+}
+.sidebar li a i{
+    font-size: 15px;
+}
+.sidebar li a span{
+    margin-left: 20px;
+}
+
+.content-1 .card-header{
+    background-color: white;
+}
+.content-1 .card-header h5{
+    margin: 0;
+    font-size: 17px;
+}
+.content-1 .users img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.content-1 .users .user p{
+    margin: 0;
+    font-weight: 500;
+    color: #2a2b2e;
+}
+
+.content-1 .users .user .user-info{
+    margin-left: 15px;
+}
+
+
+
+.dashboard-stats .stat{
+    border-radius: 10px;
+    padding: 20px;
+}
+.dashboard-stats .icon{
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dashboard-stats .icon i{
+    color: white;
+    font-size: 22px;
+}
+.dashboard-stats .card{
+    border:  1px solid #e7eaf0;
+}
+
+.projects img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: -20px;
+}
+.projects .card .card-header{
+    padding: 20px;
+}
+.projects .card .card-header h5{
+     font-size: 17px;
+     margin: 0;
+}
+.projects .card .card-body{
+    padding: 0;
+}
+.projects .card table thead{
+    background-color: #f5f9fc;
+}
+.projects .card table thead th{
+    font-size: 12px !important;
+    color: #525f7f;
+    background-color: rgb(246, 248, 250);
+    padding: 15px;
+}
+.projects .card table tbody tr td{
+    padding: 17px 30px 17px;
+    font-size: 14px;
+    color: #525f7f;
+}
+.projects table tbody td:first-child span{
+    margin-left: 10px;
+    color: #232323;
+}
+
+.projects table .dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 10px;
+}
+.projects tbody .progress{
+    height: 3px;
+}
+.projects tbody .btn{
+    border: 1px solid #ccc;
+}
+
+.activity-section .card-header{
+    background-color: white;
+}
+.activity-section .activity-1 .activity-links a{
+    color: #2a2b2e;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.activity-section .activity-1 ul li:last-child{
+    border: none;
+}
+.activity-section .activity-1 li{
+    border-bottom: 1px solid #d6dce0;
+    padding: 20px 5px;
+}
+.activity-section .activity-1 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.activity-section .activity-1 .control-buttons span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.activity-section .activity-1 .control-buttons span:first-child i{
+    color: rgb(79, 85, 95);
+}
+.activity-section .activity-1 .control-buttons span i{
+    color: white;
+}
+.activity-section .activity-1 .online-sign{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+.activity-section .activities .activity-left{
+    flex: 1;
+}
+.activity-section .activities .activity-left > div{
+    margin-left: 20px;
+}
+.activity-section .activities .activity-left p{
+    margin: 0;
+}
+.activity-section .activities .activity-left p span{
+    color: #2a2b2e;
+    font-weight: 500;
+}
+.activity-section .activity-1 .card-footer{
+    background-color: white;
+}
+.activity-section .activity-1 .card-footer p{
+    color: #4d6e85;
+}
+.activity-section .activity-1 .card-footer button{
+    font-weight: 500;
+    color: white;
+}
+.activity-section .activity-1 .card-footer button:first-child{
+    border: 1px solid #b0b3ba;
+    background-color: #f5f9fc;
+    color: #2a2b2e;
+    margin-right: 15px;
+}
+.activity-section .activity-1 .card-footer button:last-child{
+    background-color: #5c60f5;
+}
+
+.activity-section .activity-2 .following{
+    display: flex;
+    justify-content: space-between;
+}
+.activity-section .activity-2 img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.activity-section .activity-2 .follow-right .btn{
+   border-radius: 20px;
+   font-weight: 500;
+}
+
+
+@media(max-width: 770px) {
+    .sidebar{
+        display: none;
+    }
+    .table{
+        width: 1000px;
+    }
+}
