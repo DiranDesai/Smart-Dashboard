@@ -257,8 +257,8 @@ a{
 }
 
 .activity-section .activity-2 .following{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 .activity-section .activity-2 img{
     width: 45px;
