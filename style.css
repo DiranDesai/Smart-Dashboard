@@ -24,7 +24,7 @@ body{
     /* font-family: "Inter"; */
     
     height: 2000px;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 .content-header{
