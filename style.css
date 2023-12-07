@@ -223,6 +223,12 @@ a{
     border-radius: 50%;
     background-color: aquamarine;
 }
+
+.activity-section .activity-1 .card-footer .right{
+    display: flex;
+    justify-content: space-between;
+    flex: 3;
+}
 .activity-section .activities .activity-left{
     flex: 1;
 }
@@ -277,5 +283,8 @@ a{
     }
     .table{
         width: 1000px;
+    }
+    .activity-section .activity-1 .card-footer .left{
+        display: none;
     }
 }
